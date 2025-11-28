@@ -1,0 +1,100 @@
+
+/*MOBILE FIRST FUCK*/
+body{
+    background-color: paleturquoise;
+}
+
+.header-container{
+    border: 3px solid green;
+    background-color: #918e8b;
+    display: flex;
+    align-items: center; 
+}
+
+nav{
+    /* border: 2px solid cadetblue;*/
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    margin-bottom: 15px;
+}
+
+
+nav a{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #c96983;
+    
+}
+
+main{
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.experience-wrapping{
+    border: 3px solid rgb(195, 24, 24);
+
+}
+
+.accomodations-wrapping{
+    border: 3px solid rgb(30, 27, 206);
+
+}
+
+.testimonials-wrapping{
+    border: 3px solid rgb(228, 211, 22);
+
+}
+
+footer{
+    background-color: #c96983;
+}
+
+
+
+
+@media screen and (min-width:769px){
+body{
+    background-color: beige;
+}
+
+/*set up for grid*/
+.experience-wrapping{
+    border: 3px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4vh;
+    column-gap: 8vw;
+}
+
+.accomodations-wrapping{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4vh;
+    column-gap: 8vw;
+}
+
+.testimonials-wrapping{
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4vh;
+    column-gap: 8vw;
+}
+}
