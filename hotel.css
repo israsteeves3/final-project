@@ -1,22 +1,101 @@
+/*notes
+find suitable fonts from inspect on other hotel sites
+everything needs to be applied to the larger media queries as of yet. we are working MOBILE FIRST
+PALETTE COLORS
+#cdc4dc
+*/
+/*MOBILE FIRST*/
 
-/*MOBILE FIRST FUCK*/
+/*homepage listed first*/
 body{
-    background-color: paleturquoise;
+    background-color: #9e92c0;
+    margin: 0;
+    padding: 0;
+    color: #cdc4dc;
 }
 
 .header-container{
-    border: 3px solid green;
-    background-color: #918e8b;
-    display: flex;
-    align-items: center; 
+    /*border: 3px solid #d3a2ae;*/
+    background-color: #cdc4dc;
 }
 
+header img{
+    /*border: 3px solid black;*/
+    margin: 5px;
+}
+
+
+
+
+.sidepanel{
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #cdc4dc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.navlinks{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlinks a{
+    padding: 12px 32px;
+    display: block;
+    font-size: 22px;
+    color: #695ca3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navlinks a:hover{
+    color: #9e92c0;
+}
+
+.closebutton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    background: none;
+    color: #695ca3;
+    border: none;
+    cursor: pointer;
+}
+
+.openbutton{
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    background-color: #695ca3;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbutton:hover{
+    background-color: #cdc4dc;
+}
+
+#menu{
+    color: #695ca3;
+    margin-left: 12%;
+}
+
+
+
+/* i am trying something different
 nav{
-    /* border: 2px solid cadetblue;*/
+    /* border: 2px solid cadetblue;
     display: flex;
     flex-direction: column;
     width: 95%;
-    
 }
 
 nav ul{
@@ -26,7 +105,9 @@ nav ul{
 }
 
 nav li{
-    margin-bottom: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 3px solid palevioletred;
 }
 
 
@@ -40,61 +121,158 @@ nav a{
     background-color: #c96983;
     
 }
+*/
 
-main{
+/*main{
     border: 5px solid rgb(255, 255, 255);
+
+}*/
+
+.titles{
+    /*border: 2px solid rgb(125, 80, 180);*/
+    text-align: center;
+    color: black;
 }
 
-.experience-wrapping{
-    border: 3px solid rgb(195, 24, 24);
+.wrapping{
+    background-color: #d3a2ae;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 100%;
+}
 
+/*
+figure{
+    border: 3px solid ghostwhite;
+}
+*/
+
+figcaption{
+    /*border: 2px solid fuchsia;*/
+    text-align: center;
+}
+
+img{
+    /*border: 2px solid rgb(125, 105, 255);*/
+    align-items: center;
+    justify-content: center;
+}
+
+/*.experience-wrapping{
+    border: 3px solid rgb(195, 24, 24);
+    background-color: #e594aa;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .accomodations-wrapping{
     border: 3px solid rgb(30, 27, 206);
-
+    background-color: rgb(127, 208, 255);
 }
 
 .testimonials-wrapping{
     border: 3px solid rgb(228, 211, 22);
+    background-color: #a7143b;
+}*/
 
-}
-
+/*make the footer a picture perhaps. remember that the names in testimonials are currently also footers*/
 footer{
     background-color: #c96983;
+    padding: 2rem;
+}
+
+/*calling on ACTIVITIES page*/
+.activities{
+.act-title{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.act-content{
+    background-color: #9e92c0;
+    text-align: center;
+    padding: 5px;
+}
+}
+
+/*calling on DINING page*/
+.dining{
+    /*border: 3px solid green;*/
+
+#beach{
+    background-color: tomato;
+    border: 3px outset black;
+}
+#sand{
+    background-color: rgb(86, 71, 255);
+}
+
+#pool{
+    background-color: rgb(209, 255, 71);
+}
+
+#lobby{
+    background-color: rgb(71, 255, 111);
+}
+
+#other{
+    background-color: rgb(255, 71, 148);
+}
+}
+
+/*calling on GUEST ROOM page*/
+.guest{
+    border: 3px solid green;
+}
+
+/*calling on TESTIMONIALS page*/
+.testimonials{
+    border: 3px solid green;
 }
 
 
+/*calling on SPA page*/
+.spa{
+    border: 3px solid green;
+}
 
+
+/*screen btwn 770px and 1000px*/
 
 @media screen and (min-width:769px){
 body{
-    background-color: beige;
+    background-color: #9e92c0;
 }
 
-/*set up for grid*/
-.experience-wrapping{
-    border: 3px solid black;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 4vh;
-    column-gap: 8vw;
+.titles{
+    /*border: 2px solid rgb(125, 80, 180);*/
+    text-align: center;
 }
 
-.accomodations-wrapping{
-    border: 3px solid black;
+.wrapping{
+    background-color: #695ca3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 4vh;
-    column-gap: 8vw;
+    place-items: center;
+    
 }
 
-.testimonials-wrapping{
-    border: 3px solid black;
+figcaption{
+    text-align: center;
+}
+}
+
+
+
+
+
+/*over 1000px*/
+@media screen and (min-width:1000px){
+    .wrapping{
+    /* border: 2px solid hotpink;*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 4vh;
-    column-gap: 8vw;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 }

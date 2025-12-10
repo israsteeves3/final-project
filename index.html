@@ -7,106 +7,128 @@ use grid for this page-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="hotel.css">
 </head>
 <body>  <!--everything is divs ONLY to get content on page. FIX LATER-->
 
-        <header class="header-container">
-			<a href="#"><img src="https://picsum.photos/200/300" alt="placeholder image" width="150" height="150"></a>
-			<h1>Shangri La Beach Resort - Your Dream Getaway</h1>
-			<nav>
-				<ul>
-					<li><a href="#">Activities and Excursions</a></li>
-					<li><a href="#">Dining</a></li>
-					<li><a href="#">Guest Rooms</a></li>
-                    <li><a href="#">Testimonials</a></li>
-					<li><a href="#">Spa</a></li>
-				</ul>
-			</nav>
-		</header>
+    <header class="header-container">
+		<a href="#"><img src="https://picsum.photos/200/300" alt="placeholder image" width="200" height="200"></a>
+		<h1>Shangri La Beach Resort - Your Dream Getaway</h1>
+	</header>
+
+    <nav id="sidepanel" class="sidepanel">
+        <button class="closebutton" id="closebutton">&#x2715;</button> 
+        <h2 id="menu">Menu</h2>
+            <ul class="navlinks">
+				<li id="act"><a href="activities-excursions.html">Activities and Excursions</a></li> <!---->
+				<li id="dine"><a href="dining.html">Dining</a></li>
+				<li id="guest"><a href="guest-rooms.html">Guest Rooms</a></li>
+                <li id="test"><a href="testimonials.html">Testimonials</a></li>
+				<li id="spas"><a href="spa.html">Spa</a></li>
+			</ul>
+	</nav>
+        <button class="openbutton" id="openbutton">&#9776;</button>
+
+        <!--mobile nav slide out
+    <nav id="mobileNav" class="sidepanel">
+        <ul>
+            <li><a href="#">Activities and Excursions</a></li>
+			<li><a href="#">Dining</a></li>
+			<li><a href="#">Guest Rooms</a></li>
+            <li><a href="#">Testimonials</a></li>
+			<li><a href="#">Spa</a></li>
+        </ul>
+    </nav>
+-->
+
+
 
 <main>
-<div class="experience-wrapping">
-
+<h2 class="titles">Experience Unforgettable Moments</h2> <!--change later-->
+<div class="wrapping">
 	<figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>Private Beach Access </h3>
+			<p>Step onto our pristine, white-sand beach.  </p>
 		</figcaption>
 	</figure>
 
 	<figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>Infinity Pool </h3>
+			<p>Relax by our stunning oceanfront infinity pool.</p>
 		</figcaption>
 	</figure>
 
     <figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>World-Class Spa</h3>
+			<p>Rejuvenate your mind and body at our spa.</p>
 		</figcaption>
 	</figure>
 
 	<figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>Exquisite Dining</h3>
+			<p>Savor culinary delights at our restaurants.</p>
 		</figcaption>
 	</figure>
 
 </div>
 
-<div class="accomodations-wrapping">
-
+<h2 class="titles">Our Luxurious Accommodations</h2>
+<div class="wrapping">
 	<figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>Ocean View Deluxe Room</h3>
+			<p>Enjoy stunning ocean views from your private balcony</p>
+            <p>[View Details]</p> <!--add an href on imgs and decide what is wanted for these-->
 		</figcaption>
 	</figure>
 
     <figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>Beachfront Suite </h3>
+			<p>Step directly onto the sand from your spacious suite</p>
+            <p>[View Details]</p>
 		</figcaption>
 	</figure>
 
 	<figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>Garden View Family Room</h3>
+			<p>Perfect for families, with ample space and garden views</p>
+            <p>[View Details]</p>
 		</figcaption>
 	</figure>
 </div>
 
-<div class="testimonials-wrapping">
-
+<h2 class="titles">What Our Guests Are Saying </h2>
+<div class="wrapping">
     <figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>"Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking." </h3>
+			<p>- Sarah M.</p>
 		</figcaption>
 	</figure>
 
 	<figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image" width="300" height="300">
 			<figcaption>
-				<h3>Caption</h3>
-			<p>Paragraph this can be aligned better with css later. there will be overflow to the side. grid will align it </p>
+				<h3>"The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible." </h3>
+			<p>- John B.</p>
 		</figcaption>
 	</figure>
-
+<p>[Read More Testimonials] </p> <!--img as href? leave as a link? need to decide-->
 </div>
 </main>
 <footer>
