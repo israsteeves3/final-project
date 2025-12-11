@@ -24,7 +24,9 @@ header img{
     margin: 5px;
 }
 
-
+#page-title{
+    text-align: center;
+}
 
 
 .sidepanel{
@@ -33,7 +35,7 @@ header img{
     z-index: 1;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #cdc4dc;
     overflow-x: hidden;
     transition: 0.5s;
@@ -71,6 +73,8 @@ header img{
 }
 
 .openbutton{
+    top: 0;
+    right: 0;
     font-size: 20px;
     cursor: pointer;
     color: black;
@@ -134,7 +138,16 @@ nav a{
     color: black;
 }
 
-.wrapping{
+.exp{
+    background-color: #d3a2ae;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 100%;
+    
+}
+
+.acom{
     background-color: #d3a2ae;
     display: grid;
     grid-template-columns: 1fr;
@@ -142,11 +155,21 @@ nav a{
     width: 100%;
 }
 
-/*
+.what{
+    background-color: #d3a2ae;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 100%;
+    
+    
+}
+
+
 figure{
     border: 3px solid ghostwhite;
 }
-*/
+
 
 figcaption{
     /*border: 2px solid fuchsia;*/
