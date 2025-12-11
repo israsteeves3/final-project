@@ -161,13 +161,17 @@ nav a{
     grid-template-columns: 1fr;
     place-items: center;
     width: 100%;
-    
+    justify-items: center;
     
 }
 
 
 figure{
     border: 3px solid ghostwhite;
+}
+
+img{
+    object-fit: contain;
 }
 
 
