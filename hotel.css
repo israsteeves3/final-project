@@ -17,9 +17,10 @@ body{
 .header-container{
     /*border: 3px solid #d3a2ae;*/
     background-color: #cdc4dc;
+    color: black;
 }
 
-header img{
+.header-container img{
     /*border: 3px solid black;*/
     margin: 5px;
 }
@@ -27,6 +28,14 @@ header img{
 #page-title{
     text-align: center;
 }
+
+/*changes the size of the logo*/ 
+#logo{
+    /*border: 2px solid white;*/
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 .sidepanel{
@@ -210,24 +219,25 @@ footer{
 }
 
 /*calling on ACTIVITIES page*/
-.activities{
-.act-title{
+.activities .act-title{
     text-align: center;
 }
+
 ul{
     list-style: none;
 }
+
 .act-content{
     background-color: #9e92c0;
     text-align: center;
     padding: 5px;
 }
-}
+
 
 /*calling on DINING page*/
 .dining{
-    /*border: 3px solid green;*/
-
+    border: 3px solid green;
+}
 #beach{
     background-color: tomato;
     border: 3px outset black;
@@ -247,7 +257,7 @@ ul{
 #other{
     background-color: rgb(255, 71, 148);
 }
-}
+
 
 /*calling on GUEST ROOM page*/
 .guest{
