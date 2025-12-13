@@ -2,41 +2,48 @@
 find suitable fonts from inspect on other hotel sites
 everything needs to be applied to the larger media queries as of yet. we are working MOBILE FIRST
 PALETTE COLORS
-#cdc4dc
+
 */
+
 /*MOBILE FIRST*/
 
 /*homepage listed first*/
 body{
-    background-color: #9e92c0;
+    background-color: #4715d1; 
     margin: 0;
     padding: 0;
     color: #cdc4dc;
 }
 
 .header-container{
-    /*border: 3px solid #d3a2ae;*/
+    border: 3px solid #00ff3c;
     background-color: #cdc4dc;
     color: black;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1rem;
+    
 }
 
-.header-container img{
-    /*border: 3px solid black;*/
-    margin: 5px;
+/*changes the size of the logo*/ 
+
+#logo{
+    border: 3px solid black;
+    display: block;
+
+    max-height: 200px;
+    height: auto;
+    object-fit: contain;
+
 }
 
 #page-title{
     text-align: center;
 }
 
-/*changes the size of the logo*/ 
-#logo{
-    /*border: 2px solid white;*/
-    max-width: 100%;
-    height: auto;
-}
 
 
+/*nav*/
 
 .sidepanel{
     width: 0;
@@ -49,6 +56,7 @@ body{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    border: 2px solid black; /*keep, change color with the new color palette*/
 }
 
 .navlinks{
@@ -72,28 +80,34 @@ body{
 
 .closebutton{
     position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 22px;
+    top: 0;
+    right: 0;
+    font-size: 30px;
     background: none;
     color: #695ca3;
     border: none;
     cursor: pointer;
+    padding: 20px 25px;
 }
 
 .openbutton{
     top: 0;
     right: 0;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
     color: black;
     background-color: #695ca3;
-    padding: 10px 15px;
+    padding: 20px 25px;
     border: none;
+    position: fixed;
 }
 
 .openbutton:hover{
     background-color: #cdc4dc;
+}
+
+.closebutton:hover{
+    background-color: #461891;
 }
 
 #menu{
@@ -171,7 +185,6 @@ nav a{
     place-items: center;
     width: 100%;
     justify-items: center;
-    
 }
 
 
@@ -212,7 +225,7 @@ img{
     background-color: #a7143b;
 }*/
 
-/*make the footer a picture perhaps. remember that the names in testimonials are currently also footers*/
+/*make the footer a picture perhaps. remember that the names in testimonials are currently also footers FIXED*/
 footer{
     background-color: #c96983;
     padding: 2rem;
@@ -300,8 +313,6 @@ figcaption{
     text-align: center;
 }
 }
-
-
 
 
 
