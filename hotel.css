@@ -9,16 +9,16 @@ PALETTE COLORS
 
 /*homepage listed first*/
 body{
-    background-color: #4715d1; 
+    background-color: #f6d9be; 
     margin: 0;
     padding: 0;
-    color: #cdc4dc;
+    color: #69bec9;
 }
 
 .header-container{
-    border: 3px solid #00ff3c;
-    background-color: #cdc4dc;
-    color: black;
+    border: 3px solid #00ff3c; 
+    background-color: #eec6b0;
+    color: #69bec9;
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 1rem;
@@ -37,9 +37,11 @@ body{
 
 }
 
+
 #page-title{
     text-align: center;
 }
+
 
 
 
@@ -158,11 +160,11 @@ nav a{
 .titles{
     /*border: 2px solid rgb(125, 80, 180);*/
     text-align: center;
-    color: black;
+    color: #86e0e0;
 }
 
 .exp{
-    background-color: #d3a2ae;
+    background-color: #f7f6ed;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -171,7 +173,7 @@ nav a{
 }
 
 .acom{
-    background-color: #d3a2ae;
+    background-color: #f7f6ed;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -179,7 +181,7 @@ nav a{
 }
 
 .what{
-    background-color: #d3a2ae;
+    background-color: #f7f6ed;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -227,7 +229,7 @@ img{
 
 /*make the footer a picture perhaps. remember that the names in testimonials are currently also footers FIXED*/
 footer{
-    background-color: #c96983;
+    background-color: #eec6b0;
     padding: 2rem;
 }
 

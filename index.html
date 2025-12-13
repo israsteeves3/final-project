@@ -1,5 +1,29 @@
-<!--home page 
-use grid for this page-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm God</title>
+    <link rel="stylesheet" href="rats-grid.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <img id="logo" src="logo.svg" alt="site logo, reads Shangri La">
+		<h3>Cancùn Mexico</h3>
+        <img src="" alt="" id="icon">
+            <ul>
+                <li id="temperature"> </li>
+                <li id="description"> </li>
+                <li id="high"> </li>
+                <li id="low"> </li>
+                <li id="feelslike"> </li>
+            </ul>
+    </header>
+-->
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +68,6 @@ use grid for this page-->
 	</nav>
         <button class="openbutton" id="openbutton">&#9776;</button>
 <h1 id="page-title">Shangri La Beach Resort - Your Dream Getaway</h1>
-
         <!--different idea
     <nav id="mobileNav" class="sidepanel">
         <ul>
@@ -56,9 +79,146 @@ use grid for this page-->
         </ul>
     </nav>
 -->
+<main>
+    <h2 class="titles">Experience Unforgettable Moments</h2> <!--change later-->
+
+    <div class="exp">
+        <div class="item-exp">
+            <img src="h-white-sand-beach.jpg" alt="picture of a private white sands beach">
+            <h3>Private Beach Access</h3>
+			<p>Step onto our pristine, white-sand beach.</p>
+        </div>
+        <div class="item-exp">
+            <img src="h-sunset.jpg" alt="sunset pink tinted image of an infinity pool with some lounge chairs, hotel building in the background">
+            <h3>Infinity Pool</h3>
+			<p>Relax by our stunning oceanfront infinity pool.</p>
+        </div>
+        <div class="item-exp">
+            <img src="h-pexels-john-tekeridis-21837-3212164.jpg" alt="image of a woman recieving a spa treatment">
+            <h3>World-Class Spa</h3>
+			<p>Rejuvenate your mind and body at our spa.</p>
+        </div>
+        <div class="item-exp">
+            <img src="h-ishan-seefromthesky-gtt803WswnA-unsplash.jpg" alt="image of an underwater themed restaurant with fish tanks along the walls">
+            <h3>Exquisite Dining</h3>
+			<p>Savor culinary delights at our restaurants.</p>
+        </div>
+    </div>
+
+    <h2 class="titles">Our Luxurious Accommodations</h2>
+
+    <div class="acom">
+        <div class="item-acom">
+            <img src="h-hotel1.jpg" alt="picture of a private white sands beach">
+            <h3>Ocean View Deluxe Room</h3>
+			<p>Enjoy stunning ocean views from your private balcony</p>
+        </div>
+        <div class="item-acom">
+            <img src="h-hotel3.jpg" alt="">
+            <h3>Beachfront Suite</h3>
+			<p>Step directly onto the sand from your spacious suite</p>
+        </div>
+        <div class="item-acom">
+            <img src="h-resort-drone.jpg" alt="placeholder image">
+            <h3>Garden View Family Room</h3>
+			<p>Perfect for families, with ample space and garden views</p>
+        </div>
+    </div>
+
+    <h2 class="titles">What Our Guests Are Saying </h2>
+
+    <div class="what">
+        <div class="item-what">
+            <h3>"Our stay at Shangri La was absolutely perfect! The service was
+                impeccable, and the views were breathtaking." </h3>
+			<p>- Sarah M.</p>
+        </div>
+        <div class="item-what">
+            <h3>"The beachfront suite was amazing! Waking up to the sound of the
+                waves and stepping right onto the sand was incredible." </h3>
+            <p>- John B.</p>
+        </div>
+        <div class="item-what">
+            <p><a href="testimonials.html">[Read More Testimonials]</a></p>
+        </div>
+        
+    </div>
+</main>
+
+<footer>
+    <small>Footer</small>
+</footer>
+
+<script src="hotel.js"></script>
+    
+</body>
+
+</html>
+
+
+
+
+<!--home page 
+use grid for this page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>  verything is divs ONLY to get content on page. FIX LATER
+
+<header class="header-container">
+	<div class="logo-container">
+		<img id="logo" src="logo.svg" alt="site logo, reads Shangri La">
+	</div>
+
+	<aside class="weather-container">
+		<h3>Cancùn Mexico</h3>
+    <img src="" alt="" id="icon">
+    <ul>
+        <li id="temperature"> </li>
+        <li id="description"> </li>
+        <li id="high"> </li>
+        <li id="low"> </li>
+        <li id="feelslike"> </li>
+    </ul>
+	</aside>
+</header>
+
+
+    <nav id="sidepanel" class="sidepanel">
+        <button class="closebutton" id="closebutton">&#x2715;</button> 
+        <h2 id="menu">Menu</h2>
+            <ul class="navlinks">
+				<li id="act"><a href="activities-excursions.html">Activities and Excursions</a></li> 
+				<li id="dine"><a href="dining.html">Dining</a></li>
+				<li id="guest"><a href="guest-rooms.html">Guest Rooms</a></li>
+                <li id="test"><a href="testimonials.html">Testimonials</a></li>
+				<li id="spas"><a href="spa.html">Spa</a></li>
+			</ul>
+	</nav>
+        <button class="openbutton" id="openbutton">&#9776;</button>
+<h1 id="page-title">Shangri La Beach Resort - Your Dream Getaway</h1>
+
+        different idea
+    <nav id="mobileNav" class="sidepanel">
+        <ul>
+            <li><a href="#">Activities and Excursions</a></li>
+			<li><a href="#">Dining</a></li>
+			<li><a href="#">Guest Rooms</a></li>
+            <li><a href="#">Testimonials</a></li>
+			<li><a href="#">Spa</a></li>
+        </ul>
+    </nav>
+
 
 <main>
-<h2 class="titles">Experience Unforgettable Moments</h2> <!--change later CHANGED-->
+<h2 class="titles">Experience Unforgettable Moments</h2> <!-change later CHANGED
 <div class="exp">
 	<figure>
 		<img src="https://picsum.photos/200/300" alt="placeholder image">
@@ -101,7 +261,7 @@ use grid for this page-->
 			<figcaption>
 				<h3>Ocean View Deluxe Room</h3>
 			<p>Enjoy stunning ocean views from your private balcony</p>
-            <p>[View Details]</p> <!--add an href on imgs and decide what is wanted for these-->
+            <p>[View Details]</p> <!-add an href on imgs and decide what is wanted for these
 		</figcaption>
 	</figure>
 
@@ -141,7 +301,7 @@ use grid for this page-->
 			<p>- John B.</p>
 		</figcaption>
 	</figure>
-<p>[Read More Testimonials] </p> <!--img as href? leave as a link? need to decide-->
+<p>[Read More Testimonials] </p> <!-img as href? leave as a link? need to decide
 </div>
 </main>
 <footer>
@@ -151,3 +311,4 @@ use grid for this page-->
     <script src="hotel.js"></script>
 </body>
 </html>
+-->
