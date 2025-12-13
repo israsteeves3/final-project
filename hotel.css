@@ -1,49 +1,33 @@
-/*notes
-find suitable fonts from inspect on other hotel sites
-everything needs to be applied to the larger media queries as of yet. we are working MOBILE FIRST
-PALETTE COLORS
-
-*/
-
-/*MOBILE FIRST*/
-
-/*homepage listed first*/
 body{
-    background-color: #f6d9be; 
+    background-color: #f8f4de;
     margin: 0;
     padding: 0;
-    color: #69bec9;
 }
 
 .header-container{
-    border: 3px solid #00ff3c; 
-    background-color: #eec6b0;
-    color: #69bec9;
+    background-color: #bdb19a;
+    color: white;
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 1rem;
-    
+
 }
 
 /*changes the size of the logo*/ 
 
 #logo{
-    border: 3px solid black;
+    
     display: block;
-
     max-height: 200px;
     height: auto;
     object-fit: contain;
 
 }
 
-
 #page-title{
     text-align: center;
+    color: #bdb19a;
 }
-
-
-
 
 /*nav*/
 
@@ -54,11 +38,11 @@ body{
     height: 100%;
     top: 0;
     right: 0;
-    background-color: #cdc4dc;
+    background-color: #f8f4de;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    border: 2px solid black; /*keep, change color with the new color palette*/
+    border: 5px solid #bdb19a; /*keep, change color with the new color palette*/
 }
 
 .navlinks{
@@ -71,13 +55,13 @@ body{
     padding: 12px 32px;
     display: block;
     font-size: 22px;
-    color: #695ca3;
+    color: #bdb19a;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .navlinks a:hover{
-    color: #9e92c0;
+    color: #7c590d;
 }
 
 .closebutton{
@@ -86,7 +70,7 @@ body{
     right: 0;
     font-size: 30px;
     background: none;
-    color: #695ca3;
+    color: #bdb19a;
     border: none;
     cursor: pointer;
     padding: 20px 25px;
@@ -97,140 +81,80 @@ body{
     right: 0;
     font-size: 30px;
     cursor: pointer;
-    color: black;
-    background-color: #695ca3;
+    color: #f8f4de;
+    background-color: #bdb19a;
     padding: 20px 25px;
     border: none;
     position: fixed;
 }
 
 .openbutton:hover{
-    background-color: #cdc4dc;
+    background-color: #c4ddc3;
 }
 
 .closebutton:hover{
-    background-color: #461891;
+    background-color: #c4ddc3;
 }
 
 #menu{
-    color: #695ca3;
+    color: #7c590d;
     margin-left: 12%;
 }
 
-
-
-/* i am trying something different
-nav{
-    /* border: 2px solid cadetblue;
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li{
-    margin-top: 7px;
-    margin-bottom: 7px;
-    border: 3px solid palevioletred;
-}
-
-
-nav a{
-    display: block;
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background-color: #c96983;
-    
-}
-*/
-
-/*main{
-    border: 5px solid rgb(255, 255, 255);
-
-}*/
-
 .titles{
-    /*border: 2px solid rgb(125, 80, 180);*/
+    color: #7c590d;
     text-align: center;
-    color: #86e0e0;
 }
 
 .exp{
-    background-color: #f7f6ed;
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr;
-    place-items: center;
-    width: 100%;
-    
+    gap: 2rem;
+    padding: 1rem;
 }
 
 .acom{
-    background-color: #f7f6ed;
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr;
-    place-items: center;
-    width: 100%;
+    gap: 2rem;
+    padding: 1rem;
 }
 
 .what{
-    background-color: #f7f6ed;
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr;
-    place-items: center;
-    width: 100%;
-    justify-items: center;
+    gap: 2rem;
+    padding: 1rem;
 }
 
-
-figure{
-    border: 3px solid ghostwhite;
-}
-
-img{
-    object-fit: contain;
-}
-
-
-figcaption{
-    /*border: 2px solid fuchsia;*/
+.item-exp{
+    background-color: #c4ddc3;
+    color: black;
     text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
-img{
-    /*border: 2px solid rgb(125, 105, 255);*/
-    align-items: center;
-    justify-content: center;
+.item-acom{
+    background-color: #afd8ce;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
-/*.experience-wrapping{
-    border: 3px solid rgb(195, 24, 24);
-    background-color: #e594aa;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.item-what{
+    background-color: #99cfd6;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
-.accomodations-wrapping{
-    border: 3px solid rgb(30, 27, 206);
-    background-color: rgb(127, 208, 255);
-}
-
-.testimonials-wrapping{
-    border: 3px solid rgb(228, 211, 22);
-    background-color: #a7143b;
-}*/
-
-/*make the footer a picture perhaps. remember that the names in testimonials are currently also footers FIXED*/
 footer{
-    background-color: #eec6b0;
+    background-color: #bdb19a;
     padding: 2rem;
+    text-align: center;
 }
 
 /*calling on ACTIVITIES page*/
@@ -243,7 +167,7 @@ ul{
 }
 
 .act-content{
-    background-color: #9e92c0;
+    background-color: #f8f4de;
     text-align: center;
     padding: 5px;
 }
@@ -251,78 +175,87 @@ ul{
 
 /*calling on DINING page*/
 .dining{
-    border: 3px solid green;
-}
-#beach{
-    background-color: tomato;
-    border: 3px outset black;
-}
-#sand{
-    background-color: rgb(86, 71, 255);
+    border: 3px solid #f8f4de;
 }
 
-#pool{
-    background-color: rgb(209, 255, 71);
-}
-
-#lobby{
-    background-color: rgb(71, 255, 111);
-}
-
-#other{
-    background-color: rgb(255, 71, 148);
-}
 
 
 /*calling on GUEST ROOM page*/
 .guest{
-    border: 3px solid green;
+    border: 3px solid #f8f4de;
 }
 
 /*calling on TESTIMONIALS page*/
 .testimonials{
-    border: 3px solid green;
+    border: 3px solid #f8f4de;
 }
 
 
 /*calling on SPA page*/
 .spa{
-    border: 3px solid green;
+    border: 3px solid #f8f4de;
 }
 
-
-/*screen btwn 770px and 1000px*/
-
-@media screen and (min-width:769px){
-body{
-    background-color: #9e92c0;
-}
-
-.titles{
-    /*border: 2px solid rgb(125, 80, 180);*/
-    text-align: center;
-}
-
-.wrapping{
-    background-color: #695ca3;
-    display: grid;
+@media screen and (min-width:769px) {
+    .exp{
+    display:grid;
     grid-template-columns: 1fr 1fr;
-    place-items: center;
-    
+    gap: 2rem;
 }
 
-figcaption{
-    text-align: center;
+.acom{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.what{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.exp .item-exp:last-child{
+    grid-column: span 1;
+}
+
+.acom .item-acom:last-child{
+    grid-column: span 3;
+}
+
+.what .item-what:last-child{
+    grid-column: span 3;
 }
 }
 
-
-
-/*over 1000px*/
-@media screen and (min-width:1000px){
-    .wrapping{
-    /* border: 2px solid hotpink;*/
-    display: grid;
+@media screen and (min-width:1000px) {
+    .exp{
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.acom{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.what{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.exp .item-exp:last-child{
+    grid-column: span 3;
+}
+
+.acom .item-acom:last-child{
+    grid-column: span 1;
+}
+
+.what .item-what:last-child{
+    grid-column: span 1;
 }
 }
